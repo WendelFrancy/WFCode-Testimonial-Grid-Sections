@@ -1,0 +1,59 @@
+@media only screen and ( max-width: 23.5rem ){
+    
+    body {
+        margin: 2rem;
+        grid-template-areas: 
+        "cards"
+        "sidecard"
+        "foot";
+    }
+
+    #cards {
+        grid-template-areas:
+        "danielcard"
+        "joncard"
+        "jeanecard"
+        "patcard";
+    }
+
+    .bigcardpurple {
+        width: 19.5rem;
+        max-height: 28.5rem;
+        background-size: 6.5rem;
+        background-position:  right 1.2rem bottom 21.5rem;
+    }
+
+    .boldpara{
+        font-size: 1.182rem;
+    }
+
+    .para {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        margin: 1rem 0.3rem 0rem 0rem;
+    }
+
+    .littlecardblack {
+        width: 19.5rem;
+    }
+
+    .littlecardwhite {
+        width: 19.5rem;
+    }
+
+    .bigcardblue{
+        width: 19.5rem;
+    }
+
+    #rightcard {
+        width: 19.5rem;
+        margin: 2rem 0;
+        max-height: 29.5rem;
+    }
+
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+    

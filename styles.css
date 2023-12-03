@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed';
+    min-height: 100vh;
+    align-items: center;
+    grid-template-areas: 
+    "cards sidecard"
+    "foot foot";
+}
+
+#cards {
+    display: grid;
+    grid-area: cards;
+    grid-template-areas: 
+    "danielcard danielcard joncard"
+    "jeanecard patcard patcard";
+    justify-content: end;
+    gap: 2rem;
+}
+
+.bigcardpurple {
+    grid-area: danielcard;
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: right 5.3rem bottom 12.1rem;
+    border-radius: 0.5rem;
+    width: 35rem;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+}
+
+.infos {
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    grid-template-areas:
+        "pics name name"
+        "pics subs subs";
+}
+
+.facepic {
+    grid-area: pics;
+    border-radius: 2rem;
+    border: solid 0.15rem hsl(0, 0%, 50%);
+    max-width: 2rem;
+    margin-right: 1rem;
+}
+
+.bigcardblue .facepic {
+    border: solid 0.15rem hsl(263, 55%, 52%); 
+}
+
+.littlecardwhite .facepic {
+    border: solid 0.15rem white;
+}
+
+#rightcard .facepic {
+    border: solid 0.15rem white;
+}
+
+.names {
+    grid-area: name;
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 81%);
+}
+
+.subtitle {
+    grid-area: subs;
+    font-size: 0.75rem;
+    color: hsla(210, 46%, 95%, 0.50);
+}
+
+.boldpara {
+    color: hsl(210, 46%, 95%);
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    line-height: 1.5rem;
+}
+
+.para {
+    color: hsla(210, 46%, 95%, 0.50);
+    font-size: 0.84rem;
+    margin: 1rem 0.8rem 0.5rem 0rem;
+    line-height: 1.3rem;
+}
+
+.littlecardblack {
+    grid-area: joncard;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 0.5rem;
+    width: 17.5rem;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+}
+
+.littlecardwhite {
+    grid-area: jeanecard;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem;
+    width: 17.5rem;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+}
+
+
+.littlecardwhite .names {
+    color: hsl(217, 19%, 40%);
+}
+
+.littlecardwhite .subtitle {
+    color: hsl(0, 0%, 81%);
+}
+
+.littlecardwhite .boldpara {
+    color: hsl(217, 19%, 40%);
+    margin-right: 1rem;
+}
+
+.littlecardwhite .para {
+    color: hsl(0, 0%, 70%);
+}
+
+
+.bigcardblue {
+    grid-area: patcard;
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 0.5rem;
+    width: 35rem;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    
+}
+
+#rightcard {
+    display: grid;
+    grid-area: sidecard;
+    background-color: white;
+    border-radius: 0.5rem;
+    height: 37.8rem;
+    width: 17.5rem;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    margin-left: 2rem;
+}
+
+#rightcard .names{
+    color: hsl(217, 19%, 35%);
+}
+
+#rightcard .subtitle {
+    color: hsl(0, 0%, 81%);
+}
+
+#rightcard .boldpara {
+    color: hsl(217, 19%, 35%);
+}
+
+#rightcard .para {
+    color: hsl(0, 0%, 70%);
+}
+
+footer {
+    display: grid;
+    justify-content: center;
+    grid-area: foot;
+}
